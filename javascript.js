@@ -1,8 +1,19 @@
 const container = document.querySelector('#grid-container');
-const rows = 8;
-const columns = 8;
+const gridBtn = document.querySelector('.grid-btn');
+let n = 8;
 
-for(let i = 0; i < (rows * columns); i++){
+//prompt
+gridBtn.addEventListener('click', () => {
+	n = prompt('Enter the dimension for the grid, 100 is the max, 16 is the default.');
+
+	if(n  === null || n > 100) {
+	n = 16;
+}
+});
+
+
+//grid
+for(let i = 0; i < (n * n); i++){
 	const square = document.createElement('div');
 	square.classList.add('square');
 	square.textContent = i + 1;
