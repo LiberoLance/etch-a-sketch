@@ -9,19 +9,19 @@ gridBtn.addEventListener('click', () => {
 	if(n  === null || n > 100) {
 	n = 16;
 }
-});
-
 
 //grid
 for(let i = 0; i < (n * n); i++){
-	const square = document.createElement('div');
-	square.classList.add('square');
-	square.textContent = i + 1;
-	container.appendChild(square); 
+        const square = document.createElement('div');
+        square.classList.add('square');
+        square.textContent = i + 1;
+        container.appendChild(square);
 }
 //set correct nxn style for grid
-container.style.setProperty('grid-template-columns', `repeat(${columns}, auto)`);
-container.style.setProperty('grid-template-rows', `repeat(${rows}, auto)`);
+container.style.setProperty('grid-template-columns', `repeat(${n}, auto)`);
+container.style.setProperty('grid-template-rows', `repeat(${n}, auto)`);
+});
+
 
 //add mouse over event
 container.addEventListener('mouseover', (e) => {
