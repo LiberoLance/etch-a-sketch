@@ -1,8 +1,13 @@
 #grid-container {
 	display: grid;
+	width: 1000px;
+	height: 1000px;
+	max-width: 1000px;
 }
 
 .grid-btn {
+	margin: auto;
+	width: 50px;
 	background-color: white;
 	border: 2px solid #008CBA;
   	color: black;
