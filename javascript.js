@@ -10,7 +10,10 @@ gridBtn.addEventListener('click', () => {
 	n = 16;
 }
 
-//grid
+//clear board
+container.innerhtml = "";
+
+//build grid
 for(let i = 0; i < (n * n); i++){
         const square = document.createElement('div');
         square.classList.add('square');
