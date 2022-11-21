@@ -11,7 +11,7 @@ gridBtn.addEventListener('click', () => {
 }
 
 //clear board
-container.innerHtml = '';
+container.innerHTML = '';
 
 //build grid
 for(let i = 0; i < (n * n); i++){
