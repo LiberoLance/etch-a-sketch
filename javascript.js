@@ -27,7 +27,6 @@ container.innerHTML = '';
 for(let i = 0; i < (n * n); i++){
         const square = document.createElement('div');
         square.classList.add('square');
-        square.textContent = i + 1;
         container.appendChild(square);
 }
 //set correct nxn style for grid
